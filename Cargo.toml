@@ -27,7 +27,7 @@ munge = { version = "0.4", default-features = false }
 proc-macro2 = { version = "1", default-features = false }
 ptr_meta = { version = "0.3", default-features = false }
 quote = { version = "1", default-features = false }
-rend = { version = "0.5", default-features = false }
+rend = { version = "0.5", default-features = false, features = ["zerocopy-0_8"] }
 rancor = { version = "0.1", default-features = false }
 rkyv = { version = "0.8", default-features = false, path = "rkyv" }
 rkyv_derive = { version = "=0.8.8", default-features = false, path = "rkyv_derive" }
@@ -41,7 +41,7 @@ trybuild = { version = "1", default-features = false }
 bytecheck = { git = "https://github.com/rkyv/bytecheck" }
 ptr_meta = { git = "https://github.com/rkyv/ptr_meta" }
 rancor = { git = "https://github.com/rkyv/rancor" }
-rend = { git = "https://github.com/rkyv/rend" }
+rend = { git = "https://github.com/rkyv/rend", features = ["zerocopy-0_8"] }
 
 [profile.bench]
 debug = true
